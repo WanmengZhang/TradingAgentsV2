@@ -1,0 +1,6 @@
+# 市场和情绪分析的时候，调用的是get_stock_news_openai
+
+这里面由于使用得是OpenAI的API，所以把它转换成使用DeepSeek的API，调用get_stock_news_deepseek_online
+
+
+setup.py: 执行调用不同的接口interface.py

@@ -1,0 +1,107 @@
+IMAGE          CREATED         CREATED BY                                      SIZE      COMMENT
+02c926732408   9 months ago    /bin/bash                                       956MB     
+<missing>      19 months ago   /bin/bash                                       361MB     
+<missing>      19 months ago   /bin/bash                                       408MB     
+<missing>      21 months ago   /bin/bash                                       97.7MB    
+<missing>      21 months ago   /bin/bash                                       4.02GB    
+<missing>      22 months ago   /bin/bash                                       55.7MB    
+<missing>      23 months ago   /bin/bash                                       1.87MB    
+<missing>      23 months ago   CMD ["/bin/bash"]                               0B        buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c wget http://allblue.oa.com/sa…   229MB     buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c wget http://allblue.oa.com/sa…   499MB     buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c wget http://allblue.oa.com/sa…   34.3kB    buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c wget http://allblue.oa.com/sa…   2.25MB    buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c rm -rf /opt/tdwgaia /opt/dl /…   0B        buildkit.dockerfile.v0
+<missing>      23 months ago   WORKDIR /opt                                    0B        buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c /opt/conda/bin/python3.10 -m …   13.3GB    buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c pip install --upgrade pip && …   14.2MB    buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c ln -s /opt/conda/bin/python3.…   0B        buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c source ~/.bashrc # buildkit      0B        buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c echo "alias python='/opt/cond…   259B      buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c echo "alias python3='/opt/con…   218B      buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c sh Anaconda3-2023.03-1-Linux-…   5.34GB    buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c mkdir -p /etc/ssh/ && ssh-key…   4.39kB    buildkit.dockerfile.v0
+<missing>      23 months ago   RUN /bin/sh -c yum -y install vim wget opens…   77.9MB    buildkit.dockerfile.v0
+<missing>      23 months ago   COPY Anaconda3-2023.03-1-Linux-x86_64.sh Ana…   902MB     buildkit.dockerfile.v0
+<missing>      23 months ago   COPY requirements.txt requirements.txt # bui…   205B      buildkit.dockerfile.v0
+<missing>      2 years ago     RUN |1 TARGETARCH=amd64 /bin/sh -c yum insta…   1.97GB    buildkit.dockerfile.v0
+<missing>      2 years ago     LABEL com.nvidia.cudnn.version=8.5.0.96-1       0B        buildkit.dockerfile.v0
+<missing>      2 years ago     LABEL maintainer=NVIDIA CORPORATION <sw-cuda…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ARG TARGETARCH                                  0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_CUDNN_PACKAGE_DEV=libcudnn8-devel-8.5…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_CUDNN_PACKAGE=libcudnn8-8.5.0.96-1.cu…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_CUDNN_VERSION=8.5.0.96-1                 0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV LIBRARY_PATH=/usr/local/cuda/lib64/stubs    0B        buildkit.dockerfile.v0
+<missing>      2 years ago     RUN |1 TARGETARCH=amd64 /bin/sh -c yum insta…   3.43GB    buildkit.dockerfile.v0
+<missing>      2 years ago     LABEL maintainer=NVIDIA CORPORATION <sw-cuda…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ARG TARGETARCH                                  0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE=cuda-…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_CUDA_NSIGHT_COMPUTE_VERSION=11.7.1-1     0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNCCL_DEV_PACKAGE=libnccl-devel-2.1…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NCCL_VERSION=2.13.4                         0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNCCL_DEV_PACKAGE_VERSION=2.13.4-1     0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNCCL_DEV_PACKAGE_NAME=libnccl-devel   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNPP_DEV_PACKAGE=libnpp-devel-11-7-…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNPP_DEV_VERSION=11.7.4.75-1           0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBCUBLAS_DEV_VERSION=11.10.3.66-1       0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_NVML_DEV_VERSION=11.7.91-1               0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_CUDA_CUDART_DEV_VERSION=11.7.99-1        0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_NVPROF_DEV_PACKAGE=cuda-nvprof-11-7-1…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_NVPROF_VERSION=11.7.101-1                0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_CUDA_LIB_VERSION=11.7.1-1                0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENTRYPOINT ["/opt/nvidia/nvidia_entrypoint.s…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NVIDIA_PRODUCT_NAME=CUDA                    0B        buildkit.dockerfile.v0
+<missing>      2 years ago     COPY nvidia_entrypoint.sh /opt/nvidia/ # bui…   2.53kB    buildkit.dockerfile.v0
+<missing>      2 years ago     COPY entrypoint.d/ /opt/nvidia/entrypoint.d/…   3.06kB    buildkit.dockerfile.v0
+<missing>      2 years ago     RUN |1 TARGETARCH=amd64 /bin/sh -c yum insta…   1.84GB    buildkit.dockerfile.v0
+<missing>      2 years ago     LABEL maintainer=NVIDIA CORPORATION <sw-cuda…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ARG TARGETARCH                                  0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNCCL_PACKAGE=libnccl-2.13.4-1+cuda…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NCCL_VERSION=2.13.4                         0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNCCL_VERSION=2.13.4                   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNCCL_PACKAGE_VERSION=2.13.4-1         0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNCCL_PACKAGE_NAME=libnccl             0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBCUBLAS_VERSION=11.10.3.66-1           0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNPP_PACKAGE=libnpp-11-7-11.7.4.75-1   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_LIBNPP_VERSION=11.7.4.75-1               0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_NVTX_VERSION=11.7.91-1                   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_CUDA_LIB_VERSION=11.7.1-1                0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NVIDIA_DRIVER_CAPABILITIES=compute,utili…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NVIDIA_VISIBLE_DEVICES=all                  0B        buildkit.dockerfile.v0
+<missing>      2 years ago     COPY NGC-DL-CONTAINER-LICENSE / # buildkit      17.3kB    buildkit.dockerfile.v0
+<missing>      2 years ago     ENV LD_LIBRARY_PATH=/usr/local/nvidia/lib:/u…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV PATH=/usr/local/nvidia/bin:/usr/local/cu…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     RUN |1 TARGETARCH=amd64 /bin/sh -c echo "/us…   46B       buildkit.dockerfile.v0
+<missing>      2 years ago     RUN |1 TARGETARCH=amd64 /bin/sh -c yum upgra…   139MB     buildkit.dockerfile.v0
+<missing>      2 years ago     ENV CUDA_VERSION=11.7.1                         0B        buildkit.dockerfile.v0
+<missing>      2 years ago     RUN |1 TARGETARCH=amd64 /bin/sh -c NVIDIA_GP…   1.61kB    buildkit.dockerfile.v0
+<missing>      2 years ago     LABEL maintainer=NVIDIA CORPORATION <sw-cuda…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ARG TARGETARCH                                  0B        buildkit.dockerfile.v0
+<missing>      2 years ago     COPY cuda.repo-x86_64 /etc/yum.repos.d/cuda.…   165B      buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NV_CUDA_CUDART_VERSION=11.7.99-1            0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NVIDIA_REQUIRE_CUDA=cuda>=11.7 brand=tes…   0B        buildkit.dockerfile.v0
+<missing>      2 years ago     ENV NVARCH=x86_64                               0B        buildkit.dockerfile.v0
+<missing>      2 years ago     /bin/sh -c mv -fZ /tmp/ubi.repo /etc/yum.rep…   207MB     
+<missing>      2 years ago     /bin/sh -c rm -f /tmp/tls-ca-bundle.pem         0B        
+<missing>      2 years ago     /bin/sh -c rm -f '/etc/yum.repos.d/repo-700b…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) LABEL "distribution-scope"…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) ADD file:d28e25503bd15e329…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) ADD file:478ec02a2ee098e45…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) LABEL release=854             0B        
+<missing>      2 years ago     /bin/sh -c mkdir -p /var/log/rhsm               0B        
+<missing>      2 years ago     /bin/sh -c rm -rf /var/log/*                    0B        
+<missing>      2 years ago     /bin/sh -c #(nop) CMD ["/bin/bash"]             0B        
+<missing>      2 years ago     /bin/sh -c #(nop) ENV PATH /usr/local/sbin:/…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) ENV container oci             0B        
+<missing>      2 years ago     /bin/sh -c #(nop) LABEL io.openshift.tags="b…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) LABEL io.openshift.expose-…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) LABEL io.k8s.display-name=…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) LABEL description="The Uni…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) LABEL summary="Provides th…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) LABEL com.redhat.license_t…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) LABEL com.redhat.component…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) LABEL maintainer="Red Hat,…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) ADD multi:62a5ed918ba581cb…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) ADD file:214c1de395c24e4a8…   0B        
+<missing>      2 years ago     /bin/sh -c mv -f /etc/yum.repos.d/ubi.repo /…   0B        
+<missing>      2 years ago     /bin/sh -c #(nop) ADD file:9587813f225d0d152…   0B        

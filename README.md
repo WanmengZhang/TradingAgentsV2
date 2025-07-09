@@ -101,9 +101,6 @@ You will need the OpenAI API for all the agents.
 ```bash
 export OPENAI_API_KEY=$YOUR_OPENAI_API_KEY
 
-export FINNHUB_API_KEY=d1ii8tpr01qhsrhfoktgd1ii8tpr01qhsrhfoku0
-export OPENAI_API_KEY=sk-52de8db4a5d14ba195483080d876a6b9
-export VOLCES_API_KEY=19de1d4c-d1c3-4b69-b80a-00e938cbe353
 ```
 
 ### CLI Usage
