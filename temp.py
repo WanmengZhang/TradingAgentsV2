@@ -7,7 +7,7 @@ client = OpenAI(
     # 此为默认路径，您可根据业务所在地域进行配置
     base_url="https://ark.cn-beijing.volces.com/api/v3/bots",
     # 从环境变量中获取您的 API Key
-    api_key="c01a174f-bd1e-4407-93fd-946377d67d54"
+    api_key="xxxx"
 )
 
 # # Non-streaming:
@@ -26,16 +26,16 @@ client = OpenAI(
 #     print(completion.choices[0].message.reasoning_content)  # 对于R1模型，输出reasoning content
 
 # Streaming:
-ticker = "TSLA"
+ticker = "AES"
 curr_date = "2025-07-09"
 print("----- streaming request -----")
 stream = client.chat.completions.create(
     model="bot-20250704000214-252z2",  # bot-20250704000214-252z2 为您当前的智能体的ID，注意此处与Chat API存在差异。差异对比详见 SDK使用指南
     messages=[
         {"role": "system", "content": "你是DeepSeek，是一个 AI 人工智能助手"},
-        # {"role": "user", "content": f"分析一下，股票 {ticker} 从 20250709 向前 7 天期间市场情绪情况"},
-        # {"role": "user", "content": f"最近一个月，关于股票 {ticker} 的基本面（Fundamental）讨论"},
-        {"role": "user", "content": f"前7 天至今{curr_date}期间发布的全球或宏观经济新闻吗，请确保仅获取该时间段内发布的、有助于交易决策的信息。"},
+        # {"role": "user", "content": f"分析一下，美股股票 {ticker} 从 20250709 向前 7 天期间市场情绪情况"},
+        {"role": "user", "content": f"最近一个月，关于美股股票 {ticker} 的基本面（Fundamental）讨论"},
+        # {"role": "user", "content": f"前7 天至今{curr_date}期间发布的全球或宏观经济新闻吗，请确保仅获取该时间段内发布的、有助于交易决策的信息。"},
     ],
     stream=True,
 )

@@ -19,7 +19,7 @@ def create_neutral_debator(llm):
 
         trader_decision = state["trader_investment_plan"]
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             role_title = "中立风险分析师"
             prompt = f"""作为中立风险分析师,您的角色是提供一个平衡的视角,权衡交易者决策的潜在收益和风险。您优先考虑全面的分析方法,评估上行和下行空间,同时考虑更广泛的市场趋势、潜在的经济变化和投资组合多样化策略。
 
@@ -66,7 +66,7 @@ Engage actively by analyzing both sides critically, addressing weaknesses in the
 
         response = llm.invoke(prompt)
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             argument = f"中立风险分析师：{response.content}"
         else:
             argument = f"Neutral Risk Analyst: {response.content}"

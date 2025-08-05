@@ -159,7 +159,7 @@ def create_fundamentals_analyst(llm, toolkit):
             messages.append(
                 HumanMessage(content=f"请分析{ticker}的基本面信息，并调用相关工具获取数据。")
             )
-        result = chain.invoke(messages)
+        result = chain.invoke(messages, {"recursion_limit": 100})
 
         print("result", result)
 

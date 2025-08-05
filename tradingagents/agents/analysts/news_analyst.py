@@ -113,14 +113,28 @@ def create_news_analyst(llm, toolkit):
         prompt = prompt.partial(ticker=ticker)
 
         chain = prompt | llm.bind_tools(tools)
-        # result = chain.invoke(state["messages"])
 
         messages = state["messages"].copy()
-        if not (messages and getattr(messages[-1], "role", None) == "user"):
-            messages.append(
-                HumanMessage(content=f"请分析{ticker}的基本面信息，并调用相关工具获取数据。")
-            )
-        result = chain.invoke(messages)
+        
+        # 检查是否已经有工具调用的结果
+        tool_call_count = sum(1 for msg in messages if hasattr(msg, 'tool_calls') and msg.tool_calls)
+        
+        # 如果工具调用次数超过限制，强制生成最终报告
+        if tool_call_count >= 3:  # 限制最多3次工具调用
+            # 修改系统消息，要求生成最终报告而不是调用更多工具
+            final_system_message = system_message + "\n\n重要提醒：请基于已获取的信息生成最终的新闻分析报告，不要再调用任何工具。"
+            final_prompt = ChatPromptTemplate.from_messages([
+                ("system", final_system_message),
+                MessagesPlaceholder(variable_name="messages"),
+            ])
+            final_chain = final_prompt | llm  # 不绑定工具
+            result = final_chain.invoke(messages)
+        else:
+            if not (messages and getattr(messages[-1], "role", None) == "user"):
+                messages.append(
+                    HumanMessage(content=f"请分析{ticker}的基本面信息，并调用相关工具获取数据。")
+                )
+            result = chain.invoke(messages)
 
         return {
             "messages": [result],

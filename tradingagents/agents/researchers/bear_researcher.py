@@ -24,7 +24,7 @@ def create_bear_researcher(llm, memory):
         for i, rec in enumerate(past_memories, 1):
             past_memory_str += rec["recommendation"] + "\n\n"
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             prompt = f"""你是一位空方分析师，负责提出反对投资该股票的论据。你的目标是提出一个论据充分的分析，强调风险、挑战和负面指标。利用提供的研究和数据来突出潜在的下行风险，并有效反驳多方论点。
 
 重点关注以下方面：
@@ -93,7 +93,7 @@ Use this information to deliver a compelling bear argument, refute the bull's cl
 
         response = llm.invoke(prompt)
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             argument = f"空方分析师：{response.content}"
         else:
             argument = f"Bear Analyst: {response.content}"

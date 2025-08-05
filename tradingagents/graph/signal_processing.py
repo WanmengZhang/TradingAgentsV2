@@ -23,7 +23,7 @@ class SignalProcessor:
         """
         market_type = get_market_type()
         
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             system_prompt = (
                 "你是一个专门分析A股市场的AI助手，负责分析来自分析师团队的中文市场报告和分析结果。"
                 "你的任务是从这些分析中提取出最终的投资决策建议。请只输出以下三种决策之一："

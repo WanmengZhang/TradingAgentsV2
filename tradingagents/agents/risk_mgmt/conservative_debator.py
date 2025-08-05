@@ -21,7 +21,7 @@ def create_safe_debator(llm):
 
         trader_decision = state["trader_investment_plan"]
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             prompt = f"""作为保守型风险分析师，你的首要目标是保护资产、降低波动性并确保稳定可靠的增长。你优先考虑稳定性、安全性和风险控制，仔细评估潜在损失、经济下行和市场波动。在评估交易员的决策或计划时，重点审查高风险要素，指出决策可能使公司承担过度风险的地方，以及更谨慎的替代方案如何能确保长期收益。
 
 重点关注以下方面：
@@ -87,7 +87,7 @@ Engage by questioning their optimism and emphasizing the potential downsides the
 
         response = llm.invoke(prompt)
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             argument = f"保守派分析师：{response.content}"
         else:
             argument = f"Safe Analyst: {response.content}"

@@ -24,7 +24,7 @@ def create_bull_researcher(llm, memory):
         for i, rec in enumerate(past_memories, 1):
             past_memory_str += rec["recommendation"] + "\n\n"
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             prompt = f"""你是一位多方分析师，负责提出支持投资该股票的论据。你的目标是构建一个基于证据的有力分析，强调增长潜力、竞争优势和积极的市场指标。利用提供的研究和数据来应对担忧，并有效反驳空方论点。
 
 重点关注以下方面：
@@ -91,7 +91,7 @@ Use this information to deliver a compelling bull argument, refute the bear's co
 
         response = llm.invoke(prompt)
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             argument = f"多方分析师：{response.content}"
         else:
             argument = f"Bull Analyst: {response.content}"

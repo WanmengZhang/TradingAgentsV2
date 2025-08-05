@@ -20,7 +20,7 @@ def create_risky_debator(llm):
 
         trader_decision = state["trader_investment_plan"]
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             prompt = f"""作为激进型风险分析师，你的角色是积极倡导高回报、高风险的机会，强调大胆的策略和竞争优势。在评估交易员的决策或计划时，重点关注潜在的上行空间、增长潜力和创新收益——即使这些伴随着较高的风险。利用提供的市场数据和情绪分析来强化你的论点，挑战对立观点。
 
 重点关注以下方面：
@@ -86,7 +86,7 @@ Engage actively by addressing any specific concerns raised, refuting the weaknes
 
         response = llm.invoke(prompt)
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             argument = f"激进派分析师：{response.content}"
         else:
             argument = f"Risky Analyst: {response.content}"

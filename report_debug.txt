@@ -715,3 +715,163 @@ Successfully rendered HTML template
 Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_TSLA_2025-07-09.html
 Successfully saved report file
 Debug mode enabled, skipping browser opening
+
+=== Starting _generate_web_report ===
+Current working directory: /data/home/leolqli/TradingAgentsV2
+Debug file location: /data/home/leolqli/TradingAgentsV2/report_debug.txt
+trade_date: 2025-07-09
+State keys: messages, company_of_interest, trade_date, sender, market_report, sentiment_report, news_report, fundamentals_report, investment_debate_state, investment_plan, trader_investment_plan, risk_debate_state, final_trade_decision
+Reports directory path: /data/home/leolqli/TradingAgentsV2/reports
+Template directory path: /data/home/leolqli/TradingAgentsV2/templates
+Successfully loaded template
+Market type: US
+All required fields present
+Prepared report data for company: TSLA
+Successfully rendered HTML template
+Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_TSLA_2025-07-09.html
+Successfully saved report file
+Debug mode enabled, skipping browser opening
+
+=== Starting _generate_web_report ===
+Current working directory: /data/home/leolqli/TradingAgentsV2
+Debug file location: /data/home/leolqli/TradingAgentsV2/report_debug.txt
+trade_date: 2025-07-14
+State keys: messages, company_of_interest, trade_date, sender, market_report, sentiment_report, news_report, fundamentals_report, investment_debate_state, investment_plan, trader_investment_plan, risk_debate_state, final_trade_decision
+Reports directory path: /data/home/leolqli/TradingAgentsV2/reports
+Template directory path: /data/home/leolqli/TradingAgentsV2/templates
+Successfully loaded template
+Market type: US
+All required fields present
+Prepared report data for company: TSLA
+Successfully rendered HTML template
+Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_TSLA_2025-07-14.html
+Successfully saved report file
+Debug mode enabled, skipping browser opening
+
+=== Starting _generate_web_report ===
+Current working directory: /data/home/leolqli/TradingAgentsV2
+Debug file location: /data/home/leolqli/TradingAgentsV2/report_debug.txt
+trade_date: 2025-07-15
+State keys: messages, company_of_interest, trade_date, sender, market_report, sentiment_report, news_report, fundamentals_report, investment_debate_state, investment_plan, trader_investment_plan, risk_debate_state, final_trade_decision
+Reports directory path: /data/home/leolqli/TradingAgentsV2/reports
+Template directory path: /data/home/leolqli/TradingAgentsV2/templates
+Successfully loaded template
+Market type: US
+All required fields present
+Prepared report data for company: AES
+Successfully rendered HTML template
+Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_AES_2025-07-15.html
+Successfully saved report file
+Debug mode enabled, skipping browser opening
+
+=== Starting _generate_web_report ===
+Current working directory: /data/home/leolqli/TradingAgentsV2
+Debug file location: /data/home/leolqli/TradingAgentsV2/report_debug.txt
+trade_date: 2025-07-16
+State keys: messages, company_of_interest, trade_date, sender, market_report, sentiment_report, news_report, fundamentals_report, investment_debate_state, investment_plan, trader_investment_plan, risk_debate_state, final_trade_decision
+Reports directory path: /data/home/leolqli/TradingAgentsV2/reports
+Template directory path: /data/home/leolqli/TradingAgentsV2/templates
+Successfully loaded template
+Market type: US
+All required fields present
+Prepared report data for company: HIMS
+Successfully rendered HTML template
+Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_HIMS_2025-07-16.html
+Successfully saved report file
+Debug mode enabled, skipping browser opening
+
+=== Starting _generate_web_report ===
+Current working directory: /data/home/leolqli/TradingAgentsV2
+Debug file location: /data/home/leolqli/TradingAgentsV2/report_debug.txt
+trade_date: 2025-07-16
+State keys: messages, company_of_interest, trade_date, sender, market_report, sentiment_report, news_report, fundamentals_report, investment_debate_state, investment_plan, trader_investment_plan, risk_debate_state, final_trade_decision
+Reports directory path: /data/home/leolqli/TradingAgentsV2/reports
+Template directory path: /data/home/leolqli/TradingAgentsV2/templates
+Successfully loaded template
+Market type: US
+All required fields present
+Prepared report data for company: 00700
+Successfully rendered HTML template
+Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_00700_2025-07-16.html
+Successfully saved report file
+Debug mode enabled, skipping browser opening
+
+=== Starting _generate_web_report ===
+Current working directory: /data/home/leolqli/TradingAgentsV2
+Debug file location: /data/home/leolqli/TradingAgentsV2/report_debug.txt
+trade_date: 2025-07-16
+State keys: messages, company_of_interest, trade_date, sender, market_report, sentiment_report, news_report, fundamentals_report, investment_debate_state, investment_plan, trader_investment_plan, risk_debate_state, final_trade_decision
+Reports directory path: /data/home/leolqli/TradingAgentsV2/reports
+Template directory path: /data/home/leolqli/TradingAgentsV2/templates
+Successfully loaded template
+Market type: US
+All required fields present
+Prepared report data for company: 0700.HK
+Successfully rendered HTML template
+Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_0700.HK_2025-07-16.html
+Successfully saved report file
+Debug mode enabled, skipping browser opening
+
+=== Starting _generate_web_report ===
+Current working directory: /data/home/leolqli/TradingAgentsV2
+Debug file location: /data/home/leolqli/TradingAgentsV2/report_debug.txt
+trade_date: 2025-07-16
+State keys: messages, company_of_interest, trade_date, sender, market_report, sentiment_report, news_report, fundamentals_report, investment_debate_state, investment_plan, trader_investment_plan, risk_debate_state, final_trade_decision
+Reports directory path: /data/home/leolqli/TradingAgentsV2/reports
+Template directory path: /data/home/leolqli/TradingAgentsV2/templates
+Successfully loaded template
+Market type: US
+All required fields present
+Prepared report data for company: TEM
+Successfully rendered HTML template
+Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_TEM_2025-07-16.html
+Successfully saved report file
+Debug mode enabled, skipping browser opening
+
+=== Starting _generate_web_report ===
+Current working directory: /data/home/leolqli/TradingAgentsV2
+Debug file location: /data/home/leolqli/TradingAgentsV2/report_debug.txt
+trade_date: 2025-07-16
+State keys: messages, company_of_interest, trade_date, sender, market_report, sentiment_report, news_report, fundamentals_report, investment_debate_state, investment_plan, trader_investment_plan, risk_debate_state, final_trade_decision
+Reports directory path: /data/home/leolqli/TradingAgentsV2/reports
+Template directory path: /data/home/leolqli/TradingAgentsV2/templates
+Successfully loaded template
+Market type: US
+All required fields present
+Prepared report data for company: AAPL
+Successfully rendered HTML template
+Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_AAPL_2025-07-16.html
+Successfully saved report file
+Debug mode enabled, skipping browser opening
+
+=== Starting _generate_web_report ===
+Current working directory: /data/home/leolqli/TradingAgentsV2
+Debug file location: /data/home/leolqli/TradingAgentsV2/report_debug.txt
+trade_date: 2025-08-04
+State keys: messages, company_of_interest, trade_date, sender, market_report, sentiment_report, news_report, fundamentals_report, investment_debate_state, investment_plan, trader_investment_plan, risk_debate_state, final_trade_decision
+Reports directory path: /data/home/leolqli/TradingAgentsV2/reports
+Template directory path: /data/home/leolqli/TradingAgentsV2/templates
+Successfully loaded template
+Market type: US
+All required fields present
+Prepared report data for company: TSLA
+Successfully rendered HTML template
+Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_TSLA_2025-08-04.html
+Successfully saved report file
+Debug mode enabled, skipping browser opening
+
+=== Starting _generate_web_report ===
+Current working directory: /data/home/leolqli/TradingAgentsV2
+Debug file location: /data/home/leolqli/TradingAgentsV2/report_debug.txt
+trade_date: 2025-08-04
+State keys: messages, company_of_interest, trade_date, sender, market_report, sentiment_report, news_report, fundamentals_report, investment_debate_state, investment_plan, trader_investment_plan, risk_debate_state, final_trade_decision
+Reports directory path: /data/home/leolqli/TradingAgentsV2/reports
+Template directory path: /data/home/leolqli/TradingAgentsV2/templates
+Successfully loaded template
+Market type: US
+All required fields present
+Prepared report data for company: FIG
+Successfully rendered HTML template
+Saving report to: /data/home/leolqli/TradingAgentsV2/reports/report_FIG_2025-08-04.html
+Successfully saved report file
+Debug mode enabled, skipping browser opening

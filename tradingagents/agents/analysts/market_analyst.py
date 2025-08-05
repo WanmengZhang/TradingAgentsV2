@@ -181,7 +181,7 @@ MACD相关：
 
         chain = prompt | llm.bind_tools(tools)
 
-        result = chain.invoke(state["messages"])
+        result = chain.invoke(state["messages"], {"recursion_limit": 100})
 
         return {
             "messages": [result],

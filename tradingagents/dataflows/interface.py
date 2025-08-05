@@ -883,7 +883,7 @@ def get_stock_news_openai(ticker, curr_date):
         messages=[
             {"role": "system", "content": "你是DeepSeek，是一个 AI 人工智能助手"},
             # {"role": "user", "content": f"Can you search Social Media for {ticker} from 7 days before {curr_date} to {curr_date}? Make sure you only get the data posted during that period."},
-            {"role": "user", "content": f"分析一下，股票 {ticker} 从 {curr_date} 向前 7 天期间市场情绪情况"},
+            {"role": "user", "content": f"分析一下，股票代号 {ticker} 从 {curr_date} 向前 7 天期间市场情绪情况"},
         ],
         stream=True,
     )
@@ -910,7 +910,7 @@ def get_global_news_openai(curr_date):
     #             "content": [
     #                 {
     #                     "type": "input_text",
-    #                     "text": f"Can you search global or macroeconomics news from 7 days before {curr_date} to {curr_date} that would be informative for trading purposes? Make sure you only get the data posted during that period.",
+    #                     "text": f"Can you search global or macroecssonomics news from 7 days before {curr_date} to {curr_date} that would be informative for trading purposes? Make sure you only get the data posted during that period.",
     #                 }
     #             ],
     #         }
@@ -1004,7 +1004,7 @@ def get_fundamentals_openai(ticker, curr_date):
         messages=[
             {"role": "system", "content": "你是DeepSeek，是一个 AI 人工智能助手"},
             # {"role": "user", "content": f"Can you search Fundamental for discussions on {ticker} during of the month before {curr_date} to the month of {curr_date}. Make sure you only get the data posted during that period. List as a table, with PE/PS/Cash flow/ etc"},
-            {"role": "user", "content": f"最近一个月，关于股票 {ticker} 的基本面（Fundamental）讨论"},
+            {"role": "user", "content": f"最近一个月，关于股票代号 {ticker} 的基本面（Fundamental）讨论"},
         ],
         stream=True,
     )

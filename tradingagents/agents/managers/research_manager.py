@@ -21,7 +21,7 @@ def create_research_manager(llm, memory):
         for i, rec in enumerate(past_memories, 1):
             past_memory_str += rec["recommendation"] + "\n\n"
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             prompt = f"""作为投资组合经理和辩论主持人，你的职责是对本轮辩论进行严格评估，并做出明确的决策：支持空方分析师、多方分析师，或者仅在有充分理由的情况下选择持有。
 
 请简明扼要地总结双方的关键观点，重点关注最有说服力的证据或推理。你的建议（买入、卖出或持有）必须清晰明确且可执行。避免仅仅因为双方都有合理观点就默认选择持有；要基于辩论中最有力的论据做出明确的立场。

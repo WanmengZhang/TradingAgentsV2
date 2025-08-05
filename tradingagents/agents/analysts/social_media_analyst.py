@@ -108,14 +108,14 @@ def create_social_media_analyst(llm, toolkit):
         prompt = prompt.partial(ticker=ticker)
 
         chain = prompt | llm.bind_tools(tools)
-        # result = chain.invoke(state["messages"])
+        result = chain.invoke(state["messages"])
 
-        messages = state["messages"].copy()
-        if not (messages and getattr(messages[-1], "role", None) == "user"):
-            messages.append(
-                HumanMessage(content=f"请分析{ticker}的基本面信息，并调用相关工具获取数据。")
-            )
-        result = chain.invoke(messages)
+        # messages = state["messages"].copy()
+        # if not (messages and getattr(messages[-1], "role", None) == "user"):
+        #     messages.append(
+        #         HumanMessage(content=f"请分析{ticker}的基本面信息，并调用相关工具获取数据。")
+        #     )
+        # result = chain.invoke(messages, {"recursion_limit": 100})
 
         return {
             "messages": [result],

@@ -23,7 +23,7 @@ def create_risk_manager(llm, memory):
         for i, rec in enumerate(past_memories, 1):
             past_memory_str += rec["recommendation"] + "\n\n"
 
-        if market_type == "CN":
+        if market_type == "CN" or market_type == "US":
             prompt = f"""作为风险管理评审和辩论主持人，你的目标是评估三位风险分析师（激进派、中立派和保守派）之间的辩论，并为交易员确定最佳行动方案。你的决策必须得出明确的建议：买入、卖出或持有。只有在有充分具体论据支持的情况下才选择持有，而不是在所有观点都似乎合理时的默认选择。力求清晰和果断。
 
 决策指南：

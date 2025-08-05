@@ -115,7 +115,7 @@ def get_trading_graph(analysts, config):
     return TradingAgentsGraph(analysts, config=config, debug=True)
 
 def run_analysis(ticker, analysis_date, selected_analysts, research_depth, 
-                shallow_thinker, deep_thinker):
+                shallow_thinker, deep_thinker, config):
     """Run the trading agents analysis"""
     try:
         # Create containers for different components
@@ -188,7 +188,7 @@ def run_analysis(ticker, analysis_date, selected_analysts, research_depth,
         cleanup_memory()
 
         # Create config with selected research depth
-        config = DEFAULT_CONFIG.copy()
+        # config = DEFAULT_CONFIG.copy()
         config["max_debate_rounds"] = research_depth
         config["max_risk_discuss_rounds"] = research_depth
         config["quick_think_llm"] = shallow_thinker
@@ -225,7 +225,7 @@ def run_analysis(ticker, analysis_date, selected_analysts, research_depth,
             update_agent_status()
 
             final_state = graph.graph.invoke(init_agent_state, **args)
-
+            
             # Process the final state to update agent statuses and reports
             if "market_report" in final_state:
                 agent_status["Market Analyst"] = "completed"
@@ -367,6 +367,12 @@ def main():
                     value=datetime.datetime.now().date(),
                     max_value=datetime.datetime.now().date()
                 )
+                # 新增市场类型选择
+                market_type = st.selectbox(
+                    "Market Type",
+                    options=["US", "CN"],
+                    index=0 if DEFAULT_CONFIG["market_type"] == "US" else 1
+                )
 
             with col2:
                 research_depth = st.slider(
@@ -413,13 +419,18 @@ def main():
                 if analyst.value in analysts
             ]
             
+            # 复制config并集成market_type
+            config = DEFAULT_CONFIG.copy()
+            config["market_type"] = market_type
+
             decision, final_state = run_analysis(
                 ticker,
                 analysis_date.strftime("%Y-%m-%d"),
                 selected_analysts,
                 research_depth,
                 shallow_thinker,
-                deep_thinker
+                deep_thinker,
+                config,
             )
 
             if decision:
