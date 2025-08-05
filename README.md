@@ -100,6 +100,14 @@
 
 最后点击发布，既可以使得火山引擎的API Key具备了R1的联网搜索功能。
 
+然后再获取该机器人的地址：点击API调用指南
+
+![](./pic_markdown/2025-08-05-11-22-01.png)
+
+去到OpenAI SDK调用示例，获取base_url：
+
+![](./pic_markdown/2025-08-05-11-22-08.png)
+
 
 
 # 运行股票分析AI助手
@@ -114,6 +122,7 @@ pip install -r requirements.txt
 ```plaintext
 export DEEPSEEK_API_KEY=Deepseek的API
 export VOLCES_API_KEY=火山的API
+export base_url_api=机器bot的URL地址
 ```
 
 运行程序命令：

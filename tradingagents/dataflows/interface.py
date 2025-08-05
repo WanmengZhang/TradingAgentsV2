@@ -872,7 +872,7 @@ def get_stock_news_openai(ticker, curr_date):
     # return response.output[1].content[0].text
     client = OpenAI(
         # 此为默认路径，您可根据业务所在地域进行配置
-        base_url="https://ark.cn-beijing.volces.com/api/v3/bots",
+        base_url=os.environ.get("base_url_api"),
         # 从环境变量中获取您的 API Key
         api_key=os.environ.get("VOLCES_API_KEY")
     )
@@ -933,7 +933,7 @@ def get_global_news_openai(curr_date):
     # return response.output[1].content[0].text
     client = OpenAI(
         # 此为默认路径，您可根据业务所在地域进行配置
-        base_url="https://ark.cn-beijing.volces.com/api/v3/bots",
+        base_url=os.environ.get("base_url_api"),
         # 从环境变量中获取您的 API Key
         api_key=os.environ.get("VOLCES_API_KEY")
     )
@@ -993,7 +993,7 @@ def get_fundamentals_openai(ticker, curr_date):
 
     client = OpenAI(
         # 此为默认路径，您可根据业务所在地域进行配置
-        base_url="https://ark.cn-beijing.volces.com/api/v3/bots",
+        base_url=os.environ.get("base_url_api"),
         # 从环境变量中获取您的 API Key
         api_key=os.environ.get("VOLCES_API_KEY")
     )
