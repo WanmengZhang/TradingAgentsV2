@@ -25,6 +25,7 @@ setup(
         "typer>=0.9.0",
         "rich>=13.0.0",
         "questionary>=2.0.1",
+        "psutil>=5.9.0",  # 新增依赖
     ],
     python_requires=">=3.10",
     entry_points={
@@ -41,3 +42,4 @@ setup(
         "Topic :: Office/Business :: Financial :: Investment",
     ],
 )
+
